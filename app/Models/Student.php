@@ -8,6 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Student extends Model
 {
     use HasFactory;
+    
+    protected $fillable = [
+        'course_id',
+        'name',
+        'email',
+        'phone',
+        'address',
+    ];
 
 
     public function course(): \Illuminate\Database\Eloquent\Relations\HasMany
